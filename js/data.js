@@ -31,7 +31,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '20p', name: '20 Páginas', desc: '10 Lâminas (Incluso)', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Defina a quantidade', isCustomNumber: true, pricePerUnit: 15, unitName: 'Páginas', min: 20, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Defina a quantidade', isCustomNumber: true, pricePerUnit: 15, unitName: 'Páginas', min: 2, max: 80, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -77,7 +77,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '30p', name: '30 Páginas', desc: '15 Lâminas (Incluso)', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Defina a quantidade', isCustomNumber: true, pricePerUnit: 20, unitName: 'Páginas', min: 30, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Defina a quantidade', isCustomNumber: true, pricePerUnit: 20, unitName: 'Páginas', min: 2, max: 70, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -123,7 +123,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '40p', name: '40 Páginas', desc: 'Abertura Layflat', priceModifier: 0, image: 'assets/images/paginas-layflat.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 30, unitName: 'Páginas', min: 40, max: 120, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 30, unitName: 'Páginas', min: 2, max: 80, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -166,7 +166,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '20p', name: '20 Páginas', desc: 'Incluso (Fuji 800g)', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Adicione mais páginas', isCustomNumber: true, pricePerUnit: 25, unitName: 'Páginas', min: 20, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Páginas Extras', desc: 'Adicione mais páginas', isCustomNumber: true, pricePerUnit: 25, unitName: 'Páginas', min: 2, max: 80, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -203,7 +203,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '30p', name: '30 Páginas', desc: 'Incluso', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Mais páginas', isCustomNumber: true, pricePerUnit: 30, unitName: 'Páginas', min: 30, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Mais páginas', isCustomNumber: true, pricePerUnit: 30, unitName: 'Páginas', min: 2, max: 70, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -238,7 +238,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '40p', name: '40 Páginas', desc: 'Incluso', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Mais páginas', isCustomNumber: true, pricePerUnit: 40, unitName: 'Páginas', min: 40, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Mais páginas', isCustomNumber: true, pricePerUnit: 40, unitName: 'Páginas', min: 2, max: 60, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -278,7 +278,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '20p', name: '20 Páginas', desc: 'Abertura 180°', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 15, unitName: 'Páginas', min: 20, max: 60, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 15, unitName: 'Páginas', min: 2, max: 10, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     }
                 ]
@@ -305,7 +305,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '20p', name: '20 Páginas', desc: 'Incluso', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 20, unitName: 'Páginas', min: 20, max: 60, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 20, unitName: 'Páginas', min: 2, max: 40, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     },
                     {
@@ -338,7 +338,7 @@ const albumData = {
                         id: 'pages', name: 'Páginas', type: 'single',
                         options: [
                             { id: '30p', name: '30 Páginas', desc: 'Incluso', priceModifier: 0, image: 'assets/images/paginas-padrao.jpg' },
-                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 25, unitName: 'Páginas', min: 30, max: 100, image: 'assets/images/paginas-custom.jpg' }
+                            { id: 'custom_pages', name: 'Personalizado', desc: 'Páginas extras', isCustomNumber: true, pricePerUnit: 25, unitName: 'Páginas', min: 2, max: 70, image: 'assets/images/paginas-custom.jpg' }
                         ]
                     }
                 ]

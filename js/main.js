@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (option.isCustomNumber) {
                     priceText = `+ R$ ${option.pricePerUnit}/${option.unitName.toLowerCase()}`;
                     if (isSelected) {
-                        const currentValue = customValues[option.id] || option.min;
+                        const currentValue = customValues[option.id] !== undefined ? customValues[option.id] : option.min;
                         customInputHTML = `
                             <div class="custom-number-wrapper" style="margin-top: 1rem; width: 100%;">
                                 <input type="number" id="input_${option.id}" class="custom-input" value="${currentValue}" min="${option.min}" max="${option.max}" />
@@ -235,9 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
             group.options.forEach(option => {
                 if (selectedIds.includes(option.id)) {
                     if (option.isCustomNumber) {
-                        const totalUnits = customValues[option.id] || option.min;
-                        // Calculation: extra cost = (total units - base units) * price per unit
-                        const extraUnits = Math.max(0, totalUnits - option.min);
+                        const extraUnits = customValues[option.id] !== undefined ? customValues[option.id] : option.min;
                         total += extraUnits * option.pricePerUnit;
                     } else {
                         total += option.priceModifier;
@@ -264,12 +262,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (selectedIds.includes(option.id)) {
                         
                         if (option.isCustomNumber) {
-                            const totalUnits = Math.max(option.min, customValues[option.id] || option.min);
-                            const extraUnits = totalUnits - option.min;
+                            const extraUnits = Math.max(option.min, customValues[option.id] !== undefined ? customValues[option.id] : option.min);
                             const extraCost = extraUnits * option.pricePerUnit;
                             total += extraCost;
                             const priceStr = extraCost > 0 ? ` (+ R$ ${extraCost})` : '';
-                            detailsText += `%0A- ${totalUnits} ${option.unitName}${priceStr}`;
+                            detailsText += `%0A- ${extraUnits} ${option.unitName} Extras${priceStr}`;
                         } else {
                             total += option.priceModifier;
                             const priceStr = option.priceModifier > 0 ? ` (+ R$ ${option.priceModifier})` : '';
