@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // State
-    let currentCategoryId = 'oficial';
+    let currentCategoryId = 'casamento';
     let selectedAlbum = null;
     let selectedCategoryTitle = '';
     
